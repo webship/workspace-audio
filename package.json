@@ -1,0 +1,48 @@
+{
+  "name": "@webship/workspace-audio",
+  "version": "1.0.0",
+  "description": "The Audio workspace for Webship Workspace: the `audio/` folder (type media), its settings file, its 1 commands and its docs, activated as a plugin.",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "private": true,
+  "license": "ISC",
+  "repository": "github:webship/workspace-audio",
+  "files": [
+    "dist/src",
+    "commands",
+    "config",
+    "docs",
+    "features",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "test": "npm run build && node --test dist/tests/*.test.js",
+    "lint": "tsc -p tsconfig.json --noEmit"
+  },
+  "workspacePlugin": {
+    "name": "audio",
+    "label": "Audio",
+    "workspace": {
+      "key": "audio",
+      "settingsTemplate": "config/workspace.audio.settings.yml",
+      "files": [
+        "commands/cmd-tools-voice.sh"
+      ],
+      "docs": [
+        "docs/AGENTS.md",
+        "docs/CLAUDE.md",
+        "docs/README.md"
+      ]
+    },
+    "features": [
+      "features/audio.feature"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@webship/workspace-plugin-api": "github:webship/workspace-plugin-api#1.0.x",
+    "typescript": "^5.9.0"
+  }
+}
