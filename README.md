@@ -20,6 +20,6 @@ The settings file and the docs are placed once and never overwritten: they hold 
 
 | Command |
 | --- |
-| `cmd-tools-voice.sh` |
+| (none) |
 
 The bash functions these commands call live in the dashboard's `core/scripts/functions`.
