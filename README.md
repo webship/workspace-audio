@@ -1,4 +1,4 @@
-# @webship/workspace-audio
+# @webship.co/workspace-audio
 
 The **Audio** workspace of the [Webship Workspace](https://github.com/webship/workspace) dashboard:
 the `audio/` folder (type `media`), its settings file (`core/config/workspace.audio.settings.yml`),
