@@ -1,6 +1,6 @@
 {
   "name": "@webship.co/workspace-audio",
-  "version": "1.0.0-beta1",
+  "version": "1.0.0-beta2",
   "description": "The Audio workspace for Webship Workspace: the `audio/` folder (type media), its settings file, its 1 commands and its docs, activated as a plugin.",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
