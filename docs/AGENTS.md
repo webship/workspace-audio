@@ -48,3 +48,13 @@ The full architecture is in `products/workspace/CLAUDE.md`.
   credentials; those stay in `settings.yml`, never in a note beside the audio.
 
 **Google Drive.** `bash cmd-tools-google-drive-sync.sh` (or the **Sync to Drive** button) pushes this folder to its Google Drive folder, new and changed files only, never deleting; `--dry-run` previews and `-a register` adds the Google Drive MCP server to Claude Code. Settings: `google_drive:` in `core/config/settings.yml`.
+
+## AI items for this folder
+
+The plugin of this folder (`@webship.co/workspace-audio`) places its own AI items in the AI folders of the
+workspace, when they are active:
+
+- `audio-voice-maker` (`ai-agents/`): Makes a voice or a sound in `audio/` with `cmd-tools-voice.sh`: engines, voices, a text spoken into a file, a script over a video, a sound effect, music; a plan before any credits
+- `audio-workflow` (`ai-skills/`): How work is done in `audio/`: engines, voice, text file, speak, report; every action of `cmd-tools-voice.sh` with its flags, the settings keys
+- `/audio-speak` (`ai-commands/`): `/audio-speak <text> [voice]`: checks the engines, writes the text to a file, speaks it with Piper and says where the file is
+- `audio-narrate-a-text` (`ai-prompts/`): A new session that reads a text aloud into a sound file with a free local voice
