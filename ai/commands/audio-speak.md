@@ -1,5 +1,5 @@
 ---
-description: Speak a text into a sound file in the audio/ folder of the Webship Workspace with cmd-tools-voice.sh: check the engines, pick the voice, write the text to a file, speak it with Piper, and say where the file is.
+description: Speak a text into a sound file in the audio/ folder of the Webship Workspace with cmd-tools-voice.sh — check the engines, pick the voice, write the text to a file, speak it with Piper, and say where the file is.
 argument-hint: '<text to speak> [voice]'
 ---
 
