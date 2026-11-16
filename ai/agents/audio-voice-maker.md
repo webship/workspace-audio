@@ -1,6 +1,6 @@
 ---
 name: audio-voice-maker
-description: Use this agent to make a voice or a sound in the `audio/` folder of the Webship Workspace with `cmd-tools-voice.sh`: say which engines this machine can use, list the voices of one, speak a text into a file with Piper (free, local) or ElevenLabs (a plan first, credits only after a yes), speak a script over a video, make a sound effect or music from a description. It never reads or prints a key. Invoke for "read this text aloud into a file", "which voices do we have", "make a voice sample", "a sound effect for this", or "narrate this script over the video".
+description: Use this agent to make a voice or a sound in the `audio/` folder of the Webship Workspace with `cmd-tools-voice.sh` — say which engines this machine can use, list the voices of one, speak a text into a file with Piper (free, local) or ElevenLabs (a plan first, credits only after a yes), speak a script over a video, make a sound effect or music from a description. It never reads or prints a key. Invoke for "read this text aloud into a file", "which voices do we have", "make a voice sample", "a sound effect for this", or "narrate this script over the video".
 model: fable
 tools:
   - Bash
